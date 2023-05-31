@@ -3,30 +3,39 @@ import MealItem from './MealItem/MealItem'
 
 import styles from './AvailableMeals.module.css'
 
+import sushi from '../../assets/sushi.jpg';
+import schnitzel from '../../assets/schnitzel.jpg';
+import burger from '../../assets/burger.jpg'
+import salad from '../../assets/salad.jpg'
+
 const DUMMY_MEALS = [
   {
     id: 'm1',
     name: 'Sushi',
     description: 'Finest fish and veggies',
-    price: 22.99,
+    price: 20.99,
+    img: sushi
   },
   {
     id: 'm2',
     name: 'Schnitzel',
     description: 'A german specialty!',
-    price: 16.5,
+    price: 16.49,
+    img: schnitzel
   },
   {
     id: 'm3',
     name: 'Barbecue Burger',
     description: 'American, raw, meaty',
-    price: 12.99,
+    price: 14.99,
+    img: burger
   },
   {
     id: 'm4',
-    name: 'Green Bowl',
+    name: 'Salad Bowl',
     description: 'Healthy and green',
-    price: 18.99,
+    price: 17.99,
+    img: salad
   },
 ];
 

@@ -11,7 +11,7 @@ const Header = (props) => {
     <header className={ styles.header }>
 
       <h1><img className={ styles.logo } src={ Logo } alt='logo' />QuickFoods.co</h1>
-      <HeaderCartButton />
+      <HeaderCartButton onClick={ props.onShowCart } />
     </header>
     <div className={ styles['main-image'] }>
       <img src={ landingImage } alt="meal plates" />

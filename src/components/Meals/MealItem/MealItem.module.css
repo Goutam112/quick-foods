@@ -4,6 +4,7 @@
   margin: 1rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid #ccc;
+  align-items: center;
 }
 
 .meal h3 {
@@ -17,6 +18,22 @@
 .price {
   margin-top: 0.25rem;
   font-weight: bold;
-  color: #ad5502;
+  color: #02ad49;
   font-size: 1.25rem;
+}
+
+.meal-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.meal-img {
+  margin: 0 1.5rem 0rem 0;
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border: 0px solid rgba(0, 0, 0, 0);
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.35);
 }

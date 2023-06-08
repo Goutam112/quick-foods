@@ -7,13 +7,14 @@ const MealItem = props => {
   const cartContext = useContext(CartContext)
 
   const price = `$${props.meal.price.toFixed(2)}`
+  const mealImg = require(`../../../${props.meal.img}`);
 
-  const addToCartHandler = amount => cartContext.addItem({ ...props.meal, amount: amount });
+  const addToCartHandler = amount => cartContext.addItem({ ...props.meal, amount: amount }, amount);
 
   return (
     <li className={ styles.meal }>
       <div className={ styles['meal-info'] }>
-        <img className={ styles['meal-img'] } src={ props.meal.img } alt='' />
+        <img className={ styles['meal-img'] } src={ mealImg } alt='' />
         <div>
           <h3>{ props.meal.name }</h3>
           <div className={ styles.description }>{ props.meal.description }</div>
